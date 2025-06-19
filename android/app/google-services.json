@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "977693311394",
+    "project_id": "sbmb-backend-v2",
+    "storage_bucket": "sbmb-backend-v2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977693311394:android:3e01a7cf31ccf63b9c32fb",
+        "android_client_info": {
+          "package_name": "com.example.sbmb.project.v3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2yCqlBGAQKd03jXJRPEk-1Y4dvqLE4DA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
