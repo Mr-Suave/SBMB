@@ -24,3 +24,7 @@ To simulate such a band, a backend server is running which is serving all these 
 - OpenStreetMap Nominatim - To convert user address input to lat and long values ( geofening )
 - Server hosted on Flask and Python.
 - Sharedpreferences used to store vital data like parent's and baby's name - to increase user experience.
+
+
+**Note: Before using the code considering integrating your own firebase into this. The lib/firebase-options.dart file is a demo one.**
+Run flutterfire configure to integrate firebase into your project seamlessly. And also remove the google-service.json file and replace it with the one you will get when you create your firebase project.
