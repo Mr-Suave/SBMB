@@ -1,6 +1,6 @@
 # SBMB is an app infrastructure made for seamless frontend display and alert notifications for baby monitoring via a smart band.
 
-Consider a smart band connected to your baby's hand willl transmit necessary info like locations, decibal levels, movement, etc.
+Consider a smart band connected to your baby's hand that will transmit necessary info like locations, decibal levels, movement, etc.
 
 This app is the starting point for an application which will connect to such a smart band, ping it every second, and analyse, display, and alert parents based on disturbing data.
 
