@@ -16,22 +16,13 @@ import 'package:flutter/foundation.dart'
 /// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
-    if (kIsWeb) {
-      return web;
-    }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -40,49 +31,12 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAeRq1OqvPhFeZjF5vy1_pbqjqMjeiYi4s',
-    appId: '1:936588216743:web:35d0914f0ea1772e2a4e82',
-    messagingSenderId: '936588216743',
-    projectId: 'sbmb-push-notification-93359',
-    authDomain: 'sbmb-push-notification-93359.firebaseapp.com',
-    storageBucket: 'sbmb-push-notification-93359.firebasestorage.app',
-    measurementId: 'G-3EJ5R7X2WK',
-  );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA2yCqlBGAQKd03jXJRPEk-1Y4dvqLE4DA',
-    appId: '1:977693311394:android:3e01a7cf31ccf63b9c32fb',
-    messagingSenderId: '977693311394',
-    projectId: 'sbmb-backend-v2',
-    storageBucket: 'sbmb-backend-v2.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD19g2KWJbyWHSalO0t2nS5T4aK1-8gstA',
-    appId: '1:936588216743:ios:47fbb07faf90dbee2a4e82',
-    messagingSenderId: '936588216743',
-    projectId: 'sbmb-push-notification-93359',
-    storageBucket: 'sbmb-push-notification-93359.firebasestorage.app',
-    iosBundleId: 'com.example.smartBabyMonitor',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD19g2KWJbyWHSalO0t2nS5T4aK1-8gstA',
-    appId: '1:936588216743:ios:47fbb07faf90dbee2a4e82',
-    messagingSenderId: '936588216743',
-    projectId: 'sbmb-push-notification-93359',
-    storageBucket: 'sbmb-push-notification-93359.firebasestorage.app',
-    iosBundleId: 'com.example.smartBabyMonitor',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAeRq1OqvPhFeZjF5vy1_pbqjqMjeiYi4s',
-    appId: '1:936588216743:web:06d9af3a1c929d112a4e82',
-    messagingSenderId: '936588216743',
-    projectId: 'sbmb-push-notification-93359',
-    authDomain: 'sbmb-push-notification-93359.firebaseapp.com',
-    storageBucket: 'sbmb-push-notification-93359.firebasestorage.app',
-    measurementId: 'G-E8K6040HXS',
+    apiKey: 'YOUR_API_KEY',
+    appId: 'YOUR_APP_ID',
+    messagingSenderId: 'SENDER-ID',
+    projectId: 'APP_NAME',
+    storageBucket: 'BUCKET_NAME',
   );
 }
