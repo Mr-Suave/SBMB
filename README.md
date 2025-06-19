@@ -1,16 +1,26 @@
-# demo_project
+# SBMB is an app infrastructure made for seamless frontend display and alert notifications for baby monitoring via a smart band.
 
-A new Flutter project.
+Consider a smart band connected to your baby's hand willl transmit necessary info like locations, decibal levels, movement, etc.
 
-## Getting Started
+This app is the starting point for an application which will connect to such a smart band, ping it every second, and analyse, display, and alert parents based on disturbing data.
 
-This project is a starting point for a Flutter application.
+To simulate such a band, a backend server is running which is serving all these values real time and the app connects to that as a demoonstration-only project.
 
-A few resources to get you started if this is your first Flutter project:
+## Features:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Display data real time, and analyze and give feedback.
+- Check location of baby vs set location of home and give alert if baby moves too much far away.
+- Notification alerts when app is closed/minimzed so parents always stay informed.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technology used:
+
+- baby's data is stored in backend in-memory stored and hosted
+- FCM - Firebase messaging services used for notifications when app is shut.
+- Firebase firestore to store device tokens and home_lat and home_long coordinates.
+
+## Integrations
+
+- OpenStreetMap map to display baby loction visually
+- OpenStreetMap Nominatim - To convert user address input to lat and long values ( geofening )
+- Server hosted on Flask and Python.
+- Sharedpreferences used to store vital data like parent's and baby's name - to increase user experience.
